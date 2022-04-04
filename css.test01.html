@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css"><!--외부스타일-->
+    <!--내부스타일-->
+    <style>
+        * {margin:0;}
+            h1 {color:rgb(255, 176, 30)}
+        #layout1 {color:rgb(207, 88, 45);font-size: 30px;
+                border: 2px solid coral;
+                width:300px; height:100px; 
+            
+                display: flex;
+                align-items: center; /* 위아래 */
+                justify-content: center; /* 좌우 */
+
+                position: absolute; /* absolute는 절대적, relayive는 상대적 위치 */
+                left:50%;
+                top:50%;
+                transform: translate(-50%, -50%);
+            }
+                
+        .c1 {color: rgb(240, 184, 63) !important}
+        .c2 {background-color: rgb(255, 249, 228);}
+        .c1 {color:rgb(219, 85, 67)}
+        div b /* div > p */ {color:rgb(145, 174, 255); font-size: 20px;} <!--div와 p는 자식관계, div와 b는 후손관계-->
+    </style>
+</head>
+<body>
+    <img src="a2.jpg" width="300">
+    <h1 style="color:rgb(255, 134, 134)">덕성여대1</h1> <!--인라인 스타일-->
+    <div id="layout1">덕성여대2</div>
+    <h2 class="c1 c2">덕성여대3</h2>
+    <h3 style="color: rgb(33, 167, 0);">덕성여대4</h3>
+    <span style="color:rgb(33, 167, 0)" class="c1">덕성여대5</span>
+    <div><p><b>덕성여대6</b></p></div>
+</body>
+</html>

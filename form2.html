@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {margin-top: 100px;
+            margin-left: 100px;
+            margin-right: 500px;}
+        fieldset {border: 2px solid rgb(76, 150, 73);
+                background:url('d1.jpg');}
+        input {border: 1px solid rgb(240, 114, 56)}
+        button {background-color: rgb(219, 114, 114);
+                color:rgb(255, 255, 255);
+                width: 100px; height: 25px;}
+    </style>
+</head>
+<body>
+    <form method="get" action="aaa.html"></form> <!--안 보이게 하려면 get 대신 post-->
+    <form>
+        <fieldset>
+            <legend>PROFILE</legend>
+            <ul>
+            <li>
+                <label>이름
+                    <input type="text" name="name" placeholder="이름 입력" required> <!--value="이덕성" readonly-->
+                </label> <!--name이 바구니, value가 내용물-->
+            </li><br>
+            <li>
+                <label>비밀번호
+                    <input type="password" name="pw" onfocus>
+                </label>
+            </li><br>
+            <li>
+                <label for="em1">이메일
+                    <input type="email" name="em1" value="duksae@duksung.ac.kr" id="em1">
+                </label>
+            </li><br>
+            <li>
+                혈액형<br>
+                <label>A형<input type="radio" name="blood" value="b_a"></label>
+                <label>B형<input type="radio" name="blood" value="b_b"></label>
+                <label>AB형<input type="radio" name="blood" value="b_ab"></label>
+                <label>O형<input type="radio" name="blood" value="b_o"></label>
+            </li>
+            </ul>
+            <br>
+            <input type="submit" value="전송"><br>
+            <input type="reset" value="초기화"><br>
+            <input type="image" src="a2.jpg" width="60" height="30"><br>
+            <input type="button" value="공지사항" onmouseover="window.open('a1.jpg', '_blank', 'width=550, height=300')"><br>
+            <input type="file">
+            <input type="hidden" value="초기테스트" name="hd1"> <!--작동 확인용. 개발자 본인이 알기 위해 적어둠-->
+            <textarea cols="40" rows="4" name="textal"></textarea><br> <!--textarea는 여러 줄의 텍스트를 입력할 때 사용-->
+            <select name="maj" size="3" multiple>
+                <optgroup label="어문계열">
+                    <option label='Korean' value="ko1">국어국문학</option>
+                    <option value="en1" selected>영어영문학</option>
+                </optgroup>
+                <optgroup label="이공계열">
+                    <option value="com1">컴퓨터공학</option>
+                    <option value="math1">수학</option>
+                </optgroup>
+            </select>
+            <input type="text" list="da_li" name="da_li">
+                <datalist id="da_li">
+                    <option value="A">90이상</option>
+                    <option value="B">80이상</option>
+                    <option value="C">70이상</option>
+                    <option value="D">60이상</option>
+                </datalist><br><br>
+            <button type="reset">취소</button><br>
+            <button type="submit">제출</button><br>
+            <button type="button">공지사항</button><br>
+            
+        </fieldset>
+    </form>
+    <br><br>
+        <input type="range" min="1" max="100" oninput="document.getElementById('range1').innerHTML=this.value;">
+        <div style="margin-left: 50px; color:rgb(100, 0, 8)" id="range1">값</div>
+
+</body>
+</html>
