@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');  
+        @font-face {font-family:'flo';
+
+    src:local('SendFlowers-Regular.ttf'),
+    url('SendFlowers-Regular.woff') format('woff'), /* woff가 더 용량이 작음 */
+    url('SendFlowers-Regular.ttf') format('truetype'); }
+    .box1 {border: 1px solid rgb(34, 50, 108);
+            width: 400px; height: 200px;
+            text-align: center; /* 여러 줄일 때 자주 사용 */
+            line-height: 1.3em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+.c1 {
+    font-size: 4em;
+    font-family: 'Times New Roman', Times, serif;
+    color:darkcyan;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+.shad1 {
+    text-shadow: 5px 5px 15px gray; /* 가로 세로 번짐정도 색깔 */
+    -webkit-text-stroke: 1px rgb(180, 203, 199);
+}
+
+    </style>
+</head>
+<body>
+    <div style="font-family: 메이플스토리; font-size: 2em;">테스트1 TEST</div>
+    <div style="font-family: 나눔바른펜; font-size: 1rem; font-style: italic;">테스트2 TEST</div>
+    <div style="font-family: 'flo'; font-size: 16px; font-weight: 700;">테스트3 TEST</div>
+    <div class=box1 style="font-family: 'Single Day'; font-size: 2em; color:#6494eddc">하2루 방가방가 나는 웹콘텐츠 제작 수업 듣는 중</div>
+    <div style="font-style: italic; text-decoration: line-through;">테스트4</div>
+    <div class="c1 shad1">web design</div>
+</body>
+</html>

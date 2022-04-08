@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {background: url('a1.jpg');
+        background-size: cover;}
+        .test1 {
+            font-size: 5em;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: rgb(173, 190, 201);
+            text-shadow: 5px 5px 10px rgb(56, 66, 96);
+            -webkit-text-stroke: 1.5px rgb(62, 93, 142);
+            letter-spacing: 0.2em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* - 왼쪽, - 위쪽 */
+        }
+
+        nav {
+            margin-top: 30px;
+            margin-left: 50px;
+            width: 400px;
+        }
+
+        ul {
+            list-style: lower-greek inside; /* 다 다르게 하고 싶으면 class로 / 같이 쓸 수 있음 */
+            margin-top: 30px;
+            margin-left: 50px;
+            width: 300px;
+        }
+
+        ol {
+            list-style: none; /* 번호 매기지 않으면 inside도 필요 없음 */
+        }
+
+        li {
+            font-family: 나눔스퀘어;
+            border: 1px solid black;
+            padding: 10px 50px; /* 모두 같게, 상하 좌우, 상 하 좌우 */
+            margin: 10px;
+            background-color: rgba(231, 231, 231, 0.315);
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        table {
+            border: 1px solid white;
+        }
+
+        td {
+            border: 1px solid white;
+            padding: 20px 20px;
+        }
+
+        .pyo {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="test1">KIM AE-CHI</div>
+    <h2>2022-1 수강 과목</h2>
+    <ul>
+        <li>웹콘텐츠 제작</li>
+        <li>디지털오디오제작기초</li>
+        <li>인간컴퓨터상호작용</li>
+        <li>프로그래밍개론</li>
+    </ul>
+    <nav>
+    <ol>
+        <li class="center">소셜그래픽</li>
+        <li class="center">영상스토리텔링제작</li>
+        <li class="center">성공하는문화콘텐츠개발소재</li>
+    </ol>
+    </nav>
+        <table>
+            <tr class="pyo">
+                <td>1</td>
+                <td>2222</td>
+                <td>33333333</td>
+                <td>4444444444444</td>
+            </tr>
+            <tr class="pyo">
+                <td>1</td>
+                <td>2222</td>
+                <td>33333333</td>
+                <td>4444444444444</td>
+            </tr>
+            <tr class="pyo">
+                <td>1</td>
+                <td>2222</td>
+                <td>33333333</td>
+                <td>4444444444444</td>
+            </tr>
+        </table>
+</body>
+</html>
