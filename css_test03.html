@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>css_test03</title>
     <style>
         body {background: url('a1.jpg');
         background-size: cover;}
@@ -42,6 +42,7 @@
             padding: 10px 50px; /* 모두 같게, 상하 좌우, 상 하 좌우 */
             margin: 10px;
             background-color: rgba(231, 231, 231, 0.315);
+            letter-spacing: 0.5px; /* 자간 */
         }
 
         .center {
@@ -52,14 +53,21 @@
 
         table {
             border: 1px solid white;
+            caption-side: bottom;
+            border-collapse: collapse; /* (중요)선 두 개 합치기 */
+            /* border-spacing: 20px; (선과 선 넓이) */
         }
 
         td {
             border: 1px solid white;
-            padding: 20px 20px;
+            padding: 20px 50px; /* 안쪽 여백 */
         }
 
         .pyo {
+            color: white;
+        }
+
+        .cap {
             color: white;
         }
     </style>
@@ -68,7 +76,7 @@
     <div class="test1">KIM AE-CHI</div>
     <h2>2022-1 수강 과목</h2>
     <ul>
-        <li>웹콘텐츠 제작</li>
+        <li onmouseover="style='background:black'" onmouseout="style='background:white;'">웹콘텐츠 제작</li>
         <li>디지털오디오제작기초</li>
         <li>인간컴퓨터상호작용</li>
         <li>프로그래밍개론</li>
@@ -81,6 +89,7 @@
     </ol>
     </nav>
         <table>
+            <caption class="cap">표 연습</caption>
             <tr class="pyo">
                 <td>1</td>
                 <td>2222</td>

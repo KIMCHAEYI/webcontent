@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layout3_position</title>
+    <style>
+        .st {
+            width: 100px;
+            height: 100px;
+            border: 1.5px solid #ff0000;
+            position: static;
+        }
+        .re1 {
+            width: 100px;
+            height: 100px;
+            border: 1.5px solid #ff7700;
+            position: relative;
+            left: 100px;
+            top: 100px; /* relative는 서로 영향을 주지 않음 */
+        }
+        .re2 {
+            width: 100px;
+            height: 100px;
+            border: 1.5px solid #ffff00;
+            position: relative;
+            left: 100px;
+            top: 100px;
+        }
+        .abs {
+            width: 100px;
+            height: 100px;
+            border: 1.5px solid #00ff00;
+            position: absolute;
+            left: 100px;
+            top: 100px; /* 전체 문서를 기준으로 한 위치 선정 */
+        }
+        .fix {
+            width: 100px;
+            height: 100px;
+            border: 1.5px solid #0000ff;
+            position: fixed;
+            right: 50px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="st">static</div>
+    <div class="re1">relative-1</div>
+    <div class="re2">relative-2</div>
+    <div class="abs">absolute</div>
+    <div class="fix">fixed</div>
+</body>
+</html>
