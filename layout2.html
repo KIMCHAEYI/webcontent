@@ -7,6 +7,7 @@
         section {
             width: 800px;
             margin: 10px auto;
+            clear: left;
         }
         article {
             border: 1px dotted rgb(74, 87, 69);
@@ -16,6 +17,10 @@
             font-size: 0.8em;
             margin: 5px;
             padding: 15px;
+        }
+        header {
+            display: flex;
+            justify-content: center;
         }
         footer {
             clear: left;
@@ -31,9 +36,43 @@
             display: flex;
             justify-content: center;
         }
+        ul {
+            list-style: none;
+            padding: 0;
+            /* display: flex;
+            justify-content: center; (header에 작성하면 안 되는 걸까?)*/
+        }
+        ul li {
+            /* display: inline-block; */
+            float: left;
+        }
+        li a:link, a:visited {
+            text-decoration: none; /* 밑줄 없애기 */
+            border: 1px solid #46634b;
+            display: block;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: lemonchiffon;
+            background-color: #b1cbae;
+            margin: 5px 10px;
+            border-radius: 5px;
+        }
+        li a:hover {
+            background-color: #8c9d8a;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <ul>
+            <li><a href="layout2.html">Intro</a></li>
+            <li><a href="layout3.html">Profile</a></li>
+            <li><a href="layout1.html">Main</a></li>
+            <li><a href="layout4.html">Contact</a></li>
+        </ul>
+    </header>
     <section>
         <h2>강아지 용품 준비하기</h2>
         <div class="c1">

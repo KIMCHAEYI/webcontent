@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <title>css_test03</title>
     <style>
-        body {background: url('a1.jpg');
-        background-size: cover;}
+        body {
+            background: url('a1.jpg');
+            background-size: cover;
+        }
         .test1 {
             font-size: 5em;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             color: rgb(173, 190, 201);
-            text-shadow: 5px 5px 10px rgb(56, 66, 96);
+            text-shadow: 5px 5px 10px rgb(56, 66, 96); /* x, y, 번짐정도, 색 */
             -webkit-text-stroke: 1.5px rgb(62, 93, 142);
-            letter-spacing: 0.2em;
+            letter-spacing: 0.2em; /* 자간 */
             position: absolute;
             top: 50%;
             left: 50%;
@@ -91,20 +93,17 @@
         <table>
             <caption class="cap">표 연습</caption>
             <tr class="pyo">
-                <td>1</td>
+                <td rowspan="2">1</td>
                 <td>2222</td>
                 <td>33333333</td>
                 <td>4444444444444</td>
             </tr>
             <tr class="pyo">
-                <td>1</td>
-                <td>2222</td>
-                <td>33333333</td>
-                <td>4444444444444</td>
+                <td rowspan="2">2222</td>
+                <td colspan="3">33333333</td>
             </tr>
             <tr class="pyo">
                 <td>1</td>
-                <td>2222</td>
                 <td>33333333</td>
                 <td>4444444444444</td>
             </tr>
