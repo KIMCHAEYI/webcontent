@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>Hotel</title>
+    <style>
+      .box1 {
+            width: 400px;
+            height: 250;
+            color: #743726;
+            border: 1.5px solid #d49577;
+            border-radius: 7px;
+            padding: 10px;
+            margin: 5px auto;
+        }
+
+        .navi {
+            width: 800px;
+            height: 40px;
+            margin: 10px auto;
+            border-bottom: 2px solid #d49577;
+            padding: 30px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .navi ul li {
+            float: left;
+            padding: 10px; 20px;
+        }
+
+        .navi a:link, .navi a:visited {
+          text-decoration: none;
+          color: #ffae00;
+          font-family: "나눔바른펜";
+          font-size: 22px;
+          background: whitesmoke;
+          padding: 3px 20px;
+        }
+
+        .navi a:hover {
+          color: coral;
+          background: #fff3de;
+        }
+
+        #inf:target{
+          background: #fff3de;
+        }
+
+        #room:target{
+          border: 2px solid chocolate;
+          background: #fff3de;
+        }
+
+        #resv:target{
+          background: #fff3de;
+          color: chocolate;
+        } 
+    </style>
+</head>
+<body> <!--처음 sel2-->
+  <nav class="navi">
+    <ul>
+      <li><a href="css_sel2.html#inf">이용 안내</a></li>
+      <li><a href="css_sel2.html#room">객실 소개</a></li>
+      <li><a href="css_sel2.html#resv">예약 방법 및 요금</a></li>
+      <li><a href="reserv.html">예약하기</a></li>
+    </ul>
+  </nav>  
+  <div class="box1" id="inf">
+    <h2>이용 안내</h2>
+    <p>Excepteur do est eiusmod nulla et veniam. Labore officia officia ex aliqua exercitation aliqua laborum Lorem deserunt ut ullamco labore anim. Officia eu duis aliquip incididunt. Do laborum et consequat aliqua sint consectetur.</p>
+  </div>
+  <div class="box1" id="room">
+    <h2>객실 소개</h2>
+    <p>Qui magna culpa minim reprehenderit magna in nisi ipsum. Ad cillum tempor minim fugiat est dolor. Cillum sit qui minim sint officia nostrud cillum cupidatat pariatur ipsum eiusmod velit labore. Sit in non fugiat minim sit.</p>
+  </div>
+  <div class="box1" id="resv">
+    <h2>예약 방법 및 요금</h2>
+    <p>Fugiat aliquip mollit proident velit magna esse ea officia eu. Esse do aliqua proident culpa eiusmod duis minim deserunt eu reprehenderit ut tempor. </p>
+  </div>
+</body>
+</html>

@@ -42,13 +42,84 @@
             right: 50px;
             top: 50px;
         }
+        section {
+            width: 800px;
+            margin: 10px auto;
+            clear: left;
+        }
+        article {
+            border: 1px dotted rgb(74, 87, 69);
+            float: left;
+            width: 350px;
+            height: 250px;
+            font-size: 0.8em;
+            margin: 5px;
+            padding: 15px;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+        }
+        footer {
+            clear: left;
+            background-color: #b1cbae;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        .c1 {
+            display: flex;
+            justify-content: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            /* display: flex;
+            justify-content: center; (header에 작성하면 안 되는 걸까?)*/
+        }
+        ul li {
+            /* display: inline-block; */
+            float: left;
+        }
+        li a:link, a:visited {
+            text-decoration: none; /* 밑줄 없애기 */
+            border: 1px solid #46634b;
+            display: block;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: lemonchiffon;
+            background-color: #b1cbae;
+            margin: 5px 10px;
+            border-radius: 5px;
+        }
+        li a:hover {
+            background: radial-gradient(circle closest-side at 10px 10px, #b1cbae, #8c9d8a);
+        }
+        body {
+            background: linear-gradient(#f7f7e3, rgb(255, 249, 195)) fixed; /* fixed로 아래까지 색 적용 */
     </style>
 </head>
 <body>
+    <header>
+        <ul>
+            <li><a href="layout2.html">Intro</a></li>
+            <li><a href="layout3.html">Profile</a></li>
+            <li><a href="layout1.html">Main</a></li>
+            <li><a href="layout4.html">Contact</a></li>
+        </ul>
+    </header>
     <div class="st">static</div>
     <div class="re1">relative-1</div>
     <div class="re2">relative-2</div>
     <div class="abs">absolute</div>
     <div class="fix">fixed</div>
+    <footer>
+            <p>boxmodel 연습하기</p>
+        </footer>
 </body>
 </html>

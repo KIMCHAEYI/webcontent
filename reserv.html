@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation</title>
+    <style>
+        #signup{
+            width: 400px;
+            margin: 0 auto;
+            color:#d49577
+        }
+
+        #signup ul {
+            list-style: none;
+        }
+
+        #signup button {
+            width: 60px;
+            height: 25px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 15px;
+            color: #ffae00;
+            background: whitesmoke;
+            border-radius: 5px;
+            border-color: #d49577;
+        }
+
+        #signup button:hover {
+            color: chocolate;
+            background: #fff3de;
+            border-radius: 5px;
+            border-color: #d49577;
+        }
+
+        #signup fieldset {
+            border-radius: 7px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        #signup input:checked+label { /* '+'는 그 다음에 나오는 첫 lable을 바꾸겠다는 뜻 */
+            color: chocolate;
+            font-weight: bold;
+        }
+        #signup fieldset:first-of-type label {
+          width: 100px;
+          float: left;
+        }
+        .navi {
+            width: 800px;
+            height: 40px;
+            margin: 10px auto;
+            border-bottom: 2px solid #d49577;
+            padding: 30px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .navi ul li {
+            float: left;
+            padding: 10px; 20px;
+        }
+
+        .navi a:link, .navi a:visited {
+          text-decoration: none;
+          color: #ffae00;
+          font-family: "나눔바른펜";
+          font-size: 22px;
+          background: whitesmoke;
+          padding: 3px 20px;
+        }
+
+        .navi a:hover {
+          color: coral;
+          background: #fff3de;
+        }
+
+        #inf:target {
+          background: #fff3de;
+        }
+
+        #room:target {
+          border: 2px solid chocolate;
+          background: #fff3de;
+        }
+
+        /* #resv:target {
+          background: #fff3de;
+          color: chocolate;
+        } 
+
+        #ch p:nth-of-type(even) { 
+          /* nth-child() | number = 순서 | even = 짝수
+          color: green; 
+        } */
+
+        #ch :nth-child(5) {
+          color: rgb(118, 140, 205);
+        }
+        #ch p:nth-of-type(2) {
+          color: rgb(55, 162, 36);
+        }
+        #ch h3:first-of-type {
+          background: papayawhip;
+        }
+        #ch p:nth-of-type(even)::after {
+          content: "new";
+          color: red;l
+        }
+        #ch em:nth-of-type(even)::after {
+          content: "new";
+          color: red;l
+        }
+        #ch p:last-of-type em{
+          color: orange;
+          font-weight: bold;        
+        }
+    </style>
+</head>
+<body>
+    <nav class="navi">
+        <ul>
+          <li><a href="css_sel2.html#inf">이용 안내</a></li>
+          <li><a href="css_sel2.html#room">객실 소개</a></li>
+          <li><a href="css_sel2.html#resv">예약 방법 및 요금</a></li>
+          <li><a href="reserv.html">예약하기</a></li>
+        </ul>
+      </nav>  
+    <form id="signup">    
+        <fieldset>
+          <legend>개인 정보</legend>
+          <ul>
+            <li>
+              <label for="fullname">이름</label>
+              <input id="fullname" name="fullname" type="text" required>
+            </li>
+            <li>
+              <label for="tel">연락처</label>
+              <input id="tel" name="tel" type="tel">
+            </li>          
+          </ul>
+        </fieldset>
+        <fieldset> 
+          <legend>객실 형태</legend>
+          <ul>
+            <li>
+              <input type="radio" name="room" id="basic">
+              <label for="basic">기본형(최대 2인)</label>
+            </li>      
+            <li>
+              <input type="radio" name="room" id="family">
+              <label for="family">가족형(최대 8인)</label>
+            </li>          
+          </ul>
+        </fieldset>
+        <button type="submit"> 제출 </button> 
+      </form>
+      <div id="ch">
+        <p>테스트1</p>
+        <p>테스트2<em>강조</em></p>
+        <h3>테스트3</h3>
+        <p>테스트4</p>
+        <h1>테스트5</h1>
+        <p>테스트6<em>강조</em></p>
+      </div>
+</body>
+</html>
