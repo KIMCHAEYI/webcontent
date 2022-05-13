@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intro1</title>
+    <style>
+        #cont1 {
+            width: 1000px;
+            margin: 10px auto;
+            text-align: center;
+        }
+        #cont1 .img1 {
+            width: 280px;
+            height: 250px;
+            margin: 10px 20px 0;
+            float: left;
+            z-index: 0; /* 왜 하는 건지 못 들었으니 다시 찾아보기 */
+        }
+        #cont1 ul {
+            list-style: none;
+            padding: 0;
+            justify-content: center;
+            display: flex;
+        }
+        #cont1 li {
+            float: left;
+            position: relative;
+            overflow: hidden;
+        }
+        #cont1 .box1 {
+            width: 280px;
+            height: 250px;
+            background: rgb(0, 0, 0, 0.5);
+            margin: 10px 20px 0;
+            color: antiquewhite;
+            padding-top: 75px;
+            position: absolute;
+            top: 250px;
+            opacity: 0;
+            z-index: 10;
+        }
+        #cont1 li:hover .box1 {
+            transform: translatey(-250px);
+            transition: all 0.5s;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="cont1">
+        <h2>상품 설명</h2>
+        <ul>
+            <li>
+                <img src="a1.jpg" class="img1">
+                <div class="box1">
+                    <p>하늘</p>
+                    <p>어두컴컴</p>
+                </div>
+            </li>
+            <li>
+                <img src="a2.jpg" class="img1">
+                <div class="box1">
+                    <p>우리집</p>
+                    <p>은 아니고 남의 집</p>
+                </div>
+            </li>
+            <li>
+                <img src="c2.jpg" class="img1">
+                <div class="box1">
+                    <p>김태리</p>
+                    <p>내 거</p>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="d1.jpg" class="img1">
+                <div class="box1">
+                    <p>덕새</p>
+                    <p>귀여움</p>
+                </div>
+            </li>
+            <li>
+                <img src="b1.jpg" class="img1">
+                <div class="box1">
+                    <p>강아지</p>
+                    <p>그림이어도 귀여움</p>
+                </div>
+            </li>
+            <li>
+                <img src="c1.jpg" class="img1">
+                <div class="box1">
+                    <p>김태리</p>
+                    <p>여전히 내 거</p>
+                </div>
+            </li>
+        </ul>
+</body>
+</html>
