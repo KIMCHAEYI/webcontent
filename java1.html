@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java1</title>
+    <style>
+        * {
+            text-align: center;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="head1">Java Script</div>
+    <div id="text1">이름 입력</div>
+    <div id="age1">생년 입력</div>
+    <div id="color1">색상 선택</div>
+    <div id="color2">색상 선택2</div>
+    <button onclick="ch_color()">색상 선택3</button><br>
+    <span id="ch_text1">색상 변경될 텍스트</span>
+    <script>
+    var heading=document.querySelector('#head1');
+        heading.onclick=function() {
+            heading.style.color="pulple";
+            heading.style.background="lightyellow"
+        }
+
+    text1.onclick=function() {
+        var name1 = prompt("이름을 입력하세요");
+            /* alert(name1 + "님 어서오십쇼. 제대로 모시겠습니다."); */
+            /* document.write("<b style='color:green'>" + name1 + "</b><p>님 어서오십쇼. 제대로 모시겠습니다.</p>");
+            console.log(name1 = "님"); /* console창에 내용 출력
+            confirm("안녕하세요"); 
+            if(name1 !== null) {alert("취소하셨습니다.")}
+                {if(name1 !== "") {alert(name1 + "님 어서오십쇼. 제대로 모시겠습니다.");}
+                    else {alert("다시 입력해 주세요.");}
+            }
+            else alert("취소하셨습니다."); */
+            
+            if(name1 !== null && name1 !== "") 
+                {alert(name1 + "님 어서오십쇼. 제대로 모시겠습니다.");}
+            else if(name1 == "") 
+                {alert("다시 입력해 주세요.")}
+            else alert("취소하셨습니다.");
+    }
+
+    age1.onclick=function() {
+        var age1 = prompt("생년을 입력하세요.");
+            age2 = 2022 - age1 + 1;
+            alert(age2 + "세입니다.")
+        
+    }
+
+    color1.onclick=function() {
+        var sel=prompt("색을 선택하세요. 1:red 2:blue 3.green")
+        switch(sel) {
+            case "1" : document.write("<p style='color:red'>RED</p>");
+                break;
+            case "2" : document.write("<p style='color:blue'>BLUE</p>");
+                break;
+            case "3" : document.write("<p style='color:green'>GREEN</p>");
+                break;
+        }
+    }
+
+    color2.onclick=function() {
+        var sel=prompt("색을 선택하세요. 1:red 2:blue 3.green")
+        switch(sel) {
+            case "1" : ch_text1.style.color="white";ch_text1.style.background="rgb(255, 0, 0)"
+                break;
+            case "2" : ch_text1.style.color="white";ch_text1.style.background="rgb(0, 0, 255)"
+                break;
+            case "3" : ch_text1.style.color="white";ch_text1.style.background="rgb(0, 255, 0)"
+                break;
+        }
+    }
+
+    function ch_color() {
+        var sel=prompt("색을 선택하세요. 1:red 2:blue 3.green")
+        switch(sel) {
+            case "1" : ch_text1.style.color="white";ch_text1.style.background="rgb(255, 0, 0)"
+                break;
+            case "2" : ch_text1.style.color="white";ch_text1.style.background="rgb(0, 0, 255)"
+                break;
+            case "3" : ch_text1.style.color="white";ch_text1.style.background="rgb(0, 255, 0)"
+                break;
+            default : alert("잘못 입력하셨습니다.")
+        }
+    }
+    </script>
+    <!-- <script src="a.js"></script> -->
+</body>
+</html>

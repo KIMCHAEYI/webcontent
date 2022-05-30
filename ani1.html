@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        .box1 {
+            width: 150px;
+            height: 150px;
+            border: 1px solid transparent;
+            background: #8ea7c5;
+            color: white;
+            text-align: center;
+            animation: shape1 2s infinite alternate-reverse ease-in-out /* infinite alternate */;
+        }
+        .box2 {
+            width: 150px;
+            height: 150px;
+            margin-top: 50px;
+            border: 1px solid transparent;
+            background: #8ea7c5;
+            color: white;
+            text-align: center;
+            animation: shape2 2s infinite alternate-reverse ease-in-out /* infinite alternate */,
+                        bg1 3s infinite alternate linear;
+        }
+        @keyframes shape1 {
+            50% {
+                border: 2px solid #2b949a;
+            }
+            to {
+                border-radius: 50%;
+                background: #6f9973;
+            }
+        }
+        @keyframes shape2 {
+            from {
+                transform: perspective(120opx) rotate(0deg) rotatey(-180deg);
+            }
+            50% {
+                transform: perspective(120opx) rotatex(-180deg) rotatey(0deg);
+            }
+            to {
+                transform: perspective(120px) rotatex(-180deg) rotatey(-180deg);
+            }
+        }
+        @keyframes bg1 {
+            50% {
+                background: rgb(255, 206, 115);
+            }
+            to {
+                background: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        안냐세욘
+    </div>
+    <div class="box2">
+        방가방가 ^^
+    </div>
+</body>
+</html>

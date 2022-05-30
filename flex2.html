@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=#, initial-scale=1.0">
+    <title>flex2</title>
+    <style>
+        .cont1 {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #0f0f7b;
+            display: flex;
+        }
+        .box1 {
+            width: 100px;
+            border: 1px solid snow;
+            background: #94becf;
+        }
+        #a_i {
+            align-items: center; /* stretch는 height를 없애야 가능 */
+            flex-flow: row wrap;
+        }
+        #a_s {
+            align-self: flex-end;
+        }
+        /* #a_c {
+            align-content: space-between;
+            flex-flow: row wrap;
+        } */
+    </style>
+</head>
+<body>
+    <div class="cont1" id="a_i">
+        <div class="box1"><p>다음</p></div>
+        <div class="box1"><p>수업</p></div>
+        <div class="box1"><h2>휴</h2></div>
+        <div class="box1"><p>강의에 늦었네요</p></div>
+    </div>
+</body>
+</html>

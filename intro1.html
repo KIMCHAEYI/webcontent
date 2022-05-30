@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <title>Intro1</title>
     <style>
+        body {
+            background: #edd7dc;
+        }
+        h2 {
+            color: #966978;
+        }
+        p {
+            font-weight: bold;
+        }
         #cont1 {
             width: 1000px;
             margin: 10px auto;
@@ -14,7 +23,7 @@
             height: 250px;
             margin: 10px 20px 0;
             float: left;
-            z-index: 0; /* 왜 하는 건지 못 들었으니 다시 찾아보기 */
+            z-index: 0; /* 수직? 왜 하는 건지 못 들었으니 다시 찾아보기 */
         }
         #cont1 ul {
             list-style: none;
@@ -41,8 +50,21 @@
         }
         #cont1 li:hover .box1 {
             transform: translatey(-250px);
-            transition: all 0.5s;
+            transition: all 0.5s 0.5s; /* 과정 시간, 딜레이 시간 */
             opacity: 1;
+            border-radius: 20%;
+            animation: bg 3s infinite alternate linear;;
+        }
+        @keyframes bg {
+            20% {
+                background: rgba(0, 0, 0, 0.5);
+                color: rgb(255, 249, 196);
+            }
+            to {
+                background: rgba(237, 215, 220, 0.5);
+                border-radius: 50%;
+                color: #ffffff;
+            }
         }
     </style>
 </head>
@@ -51,47 +73,49 @@
         <h2>상품 설명</h2>
         <ul>
             <li>
-                <img src="a1.jpg" class="img1">
+                <a href="https://lms.duksung.ac.kr/" target="_blank">
+                <img src="f1.jpg" class="img1"></a>
+                <a href="https://www.naver.com/" target="_blank">
                 <div class="box1">
-                    <p>하늘</p>
-                    <p>어두컴컴</p>
+                    <p>딸기</p>
+                    <p>새콤달콤한 딸기</p>
+                </div></a>
+            </li>
+            <li>
+                <img src="f2.jpg" class="img1">
+                <div class="box1">
+                    <p>포도</p>
+                    <p>포도는 포도 포(葡), 포도 도(萄)</p>
                 </div>
             </li>
             <li>
-                <img src="a2.jpg" class="img1">
+                <img src="f3.jpg" class="img1">
                 <div class="box1">
-                    <p>우리집</p>
-                    <p>은 아니고 남의 집</p>
-                </div>
-            </li>
-            <li>
-                <img src="c2.jpg" class="img1">
-                <div class="box1">
-                    <p>김태리</p>
-                    <p>내 거</p>
+                    <p>바나나</p>
+                    <p>부드럽구 달달하구<br>아카시아 향기가 나는 바나나</p>
                 </div>
             </li>
         </ul>
         <ul>
             <li>
-                <img src="d1.jpg" class="img1">
+                <img src="f5.jpg" class="img1">
                 <div class="box1">
-                    <p>덕새</p>
-                    <p>귀여움</p>
+                    <p>용과</p>
+                    <p>용의 여의주 모습을 닮았다 하여<br>이 이름이 붙었다</p>
                 </div>
             </li>
             <li>
-                <img src="b1.jpg" class="img1">
+                <img src="f6.jpg" class="img1">
                 <div class="box1">
-                    <p>강아지</p>
-                    <p>그림이어도 귀여움</p>
+                    <p>레몬</p>
+                    <p>보기만 해도 침이 고이는 상큼한 레몬</p>
                 </div>
             </li>
             <li>
-                <img src="c1.jpg" class="img1">
+                <img src="f4.jpg" class="img1">
                 <div class="box1">
-                    <p>김태리</p>
-                    <p>여전히 내 거</p>
+                    <p>체리</p>
+                    <p>계속 먹게 되는 과일,<br>근데 너무 비싸</p>
                 </div>
             </li>
         </ul>
