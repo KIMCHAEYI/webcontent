@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat</title>
+    <style>
+        body {
+            background: #946868;
+            color: beige;
+        }
+        .box1 {
+            border: 2px solid beige;
+            width: 100px;
+            height: 30px;
+            display: inline-block;
+            margin: 3px;
+            text-align: center;
+            line-height: 30px;
+        }
+        table {
+            border: 2px solid beige;
+            border-collapse: collapse;
+        }
+        td {
+            border: 2px dotted beige;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var enterNum = prompt("입장 인원 수?");
+        var colNum = prompt("한 줄에 착석할 인원 수?");
+        var i=1, j;
+        /* 
+        while(i<enterNum) {
+            for(j=1; j<=colNum; j++) {
+                if(i>enterNum)
+                    break;
+                else {
+                    document.write("<div class = box1> 좌석" + i + "</div>");
+                    i++;
+                }
+            }
+        } 
+        document.write("<br>") */
+        
+        document.write("<table>")
+        while(i<enterNum) { 
+            for(j=1; j<=colNum; j++) {
+                if(i>enterNum)
+                    break;
+                else {
+                    document.write("<td> 좌석" + i + "</td>");
+                    i++;
+                }
+            }
+            document.write("</tr>")
+        }
+        document.write("</table>")
+    </script>
+</body>
+</html>

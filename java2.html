@@ -6,36 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java2</title>
     <style>
+        body {
+            background: rgb(69, 66, 90);
+        }
+
         .but1 {
-            width: 100px;
+            width: 130px;
             height: 30px;
             border-radius: 20px;
+            border-color: #786d84;
             font-size: 1.2em;
-            display: inline-block;
+            display: block;
+            margin: 5px auto;
+            font-family: 나눔바른펜;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <button class="but1" onclick="cal1()" style="background: lightblue;">합계1 </button>
-    <button class="but1" onclick="cal1()" style="background: pink;">소수판별 </button>
+    <button class="but1" onclick="cal1()" style="background: #2f466e;">합계1 </button>
+    <button class="but1" onclick="sosu()" style="background: #4a3e6c;">소수판별</button>
+    <button class="but1" onclick="divisior()" style="background: #694770;">약수 구하기 </button>
     <script>
         function cal1() {
-            var i, sum=0;
+            var i, sum = 0;
             var a = parseInt(prompt("첫 번째 숫자를 입력"));
             var b = parseInt(prompt("마지막 숫자를 입력"));
             for(i=a; i<=b; i++) {
-                sum=sum+i;
+                sum = sum + i;
             }
             alert(sum);
         }
 
         function sosu() {
-            var = 1;
-            var num1=prompt("소수 판별 숫자를 입력하세요.");
-            for(i=2; i<num1; i++) {
-
+            var i;
+            var num1 = prompt("소수 판별 숫자를 입력하세요.");
+            for(i=2; i < num1; i++) {
+                if(num1 % i == 0) {
+                    alert("소수가 아닙니다."); 
+                    break;
+                }
+                else if(i == num1 - 1) {
+                    alert("소수입니다.");
+                }
             }
         }
+
+        function divisor() {
+            var i, s = "";
+            var num1 = prompt("약수를 구할 숫자를 입력하세요");
+            for(i=1; i <= num1; i++) {
+                if(num1 % i == 0) {s = s + i + " ";}
+                    alert(s)
+                }
+        } /* 꼬옥 다시 풀면 되..ㅋ */
     </script>
 </body>
 </html>
