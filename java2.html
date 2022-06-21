@@ -9,7 +9,6 @@
         body {
             background: rgb(69, 66, 90);
         }
-
         .but1 {
             width: 130px;
             height: 30px;
@@ -25,8 +24,11 @@
 </head>
 <body>
     <button class="but1" onclick="cal1()" style="background: #2f466e;">합계1 </button>
-    <button class="but1" onclick="sosu()" style="background: #4a3e6c;">소수판별</button>
-    <button class="but1" onclick="divisior()" style="background: #694770;">약수 구하기 </button>
+    <button class="but1" onclick="sosu()" style="background: #4a3e6c;">소수 판별</button>
+    <button class="but1" onclick="divisor()" style="background: #694770;">약수 구하기</button>
+    <button class="but1" onclick="holjjak()" style="background: #704761;">짝홀수 판별</button>
+    <button class="but1" onclick="divisor()" style="background: #754352;">배수 판별</button>
+
     <script>
         function cal1() {
             var i, sum = 0;
@@ -55,11 +57,23 @@
         function divisor() {
             var i, s = "";
             var num1 = prompt("약수를 구할 숫자를 입력하세요");
-            for(i=1; i <= num1; i++) {
-                if(num1 % i == 0) {s = s + i + " ";}
-                    alert(s)
+            for(i=1; i < num1; i++) {
+                if(num1 % i == 0) {
+                    s = s + i + " ";
                 }
-        } /* 꼬옥 다시 풀면 되..ㅋ */
+            }
+            alert(s);
+        }
+
+        function holjjak(num) {
+            var answer = "";
+            if(num % 2 == 0) { //짝수인 경우
+                answer='Even';
+            }
+            else //홀수인 경우
+                answer='Odd';
+            return answer;
+}
     </script>
 </body>
 </html>

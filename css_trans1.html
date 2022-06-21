@@ -26,19 +26,19 @@
             perspective: 200px;
         }
         #trans:hover {
-            transform: translate3d(20px, 30px, 50px); /* translatex, translate3d */
+            transform: translate(20px, 50px); /* translatex, translate3d 이동 */
             background: #bea7be;
         }
         #scale:hover {
-            transform: scale3d(1.2, 1.5, 2);
+            transform: scale(1.5, 1.3); /* 확대 축소 */
             background: #bea7be;
         }
         #rotate:hover {
-            transform: rotate3d(1.2, 1.5, 0.5, 720deg);
+            transform: rotate3d(1.2, 1.5, 0.5, 720deg); /* 회전 */
             background: #bea7be;
         }
         #skew:hover {
-            transform: skew(45deg);
+            transform: skew(45deg, -45deg); /* 왜곡 */
             background: #bea7be;
         }
         .box2 {
@@ -51,7 +51,7 @@
         .box2:hover {
             background-color: #859fb5;
             width: 300px;
-            transition: all 1.5s ease-in-out; /* ease 알아두기 */
+            transition: all 1.5s ease-in-out; /* ease 알아두기, 스타일 속성 바꾸는 게 트랜지션 */ 
         }
     </style>
 </head>

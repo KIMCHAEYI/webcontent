@@ -11,14 +11,14 @@
 </head>
 <body>
     <script>
-        var a=10;
+        var a=10; /* 전역 변수 */
         function add1() {
-            var b=20; /* b=20 */
+            b=20; /* b=20 */
             console.log(b); 
             console.log(b+c);
             var c=11; 
             c=22;
-            console.log(c)
+            console.log("C" + c)
         }
         /* add1();
         console.log(a); console.lig(b) 20 20 나옴 */
@@ -29,6 +29,28 @@
             }
         }
         add2();
+
+        function hap(a, b) {
+            var sum=a+b;
+            return sum;
+        }
+
+        function comp(c, d) {
+            var max;
+            if(c>=d) {
+                max=c;
+            }
+            else if (c<d) {
+                max=d;
+            }
+            else(max=c)
+            return max;
+        }
+
+        /* var reply=hap(3, 5);
+        alert(reply) */
+        var rep=comp(4, 5);
+        alert(rep);
     </script>
 </body>
 </html>
